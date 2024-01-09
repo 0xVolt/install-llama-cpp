@@ -1,5 +1,18 @@
 # Install `llama-cpp` with GPU support
 
+## Table of Contents
+
+- [Install `llama-cpp` with GPU support](#install-llama-cpp-with-gpu-support)
+  - [Table of Contents](#table-of-contents)
+  - [About this Repository](#about-this-repository)
+  - [Environment](#environment)
+    - [Specs](#specs)
+    - [Dependencies](#dependencies)
+  - [Installation Process](#installation-process)
+    - [CPU Specific Instructions](#cpu-specific-instructions)
+    - [GPU Specific Instructions](#gpu-specific-instructions)
+  - [References](#references)
+
 ---
 
 ## About this Repository
