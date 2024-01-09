@@ -1,5 +1,10 @@
-# install-llama-cpp
-A repository with information on how to get llama-cpp setup with GPU support should you choose.
+# Install `llama-cpp` with GPU support
+
+## About this Repository
+
+I've been struggling over the last few weeks to get `llama-cpp` up and running. It wasn't quite as easy as downloading the python package and installing it with a few flags. After long hours of trying to figure out why I wouldn't get the all important `BLAS = 1` to run GPU inferences, I've figured it out and this repository will serve as a refresher on how to reproduce the installation process that worked. 
+
+Keep in mind that this may not be the best way to install `llama-cpp` (or even the right way for all that matter), but this was the way that worked for me. Here's a detailed description of the environment I used, OS, dependencies and build process for both CPU and GPU inferences.
 
 ## Commands:
 
