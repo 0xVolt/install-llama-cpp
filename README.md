@@ -73,7 +73,11 @@ To read,
 
 There might be some warnings about depreciation but it compiled for me. After that, you can use `make` to build the project.
 
-1. make LLAMA_CUBLAS=1
+```bash
+make LLAMA_CUBLAS=1
+```
+
+**Note: You don't need to make a separate `build/` directory to build the project.**
 
 ## References
 
