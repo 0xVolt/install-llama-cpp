@@ -25,6 +25,7 @@ I set up `llama-cpp` on Ubuntu running on WSL2. All these commands should work f
 3. Python 3.10.2 (Check setup in a `conda` environment)
 4. Miniconda / Anaconda
 5. Git
+6. LLMs downloaded locally in `.gguf` format. You may use `llama-cpp`'s helper scripts to convert `.bin` models to `.gguf`. 
 
 ## Commands:
 
