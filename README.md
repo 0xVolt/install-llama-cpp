@@ -1,5 +1,7 @@
 # Install `llama-cpp` with GPU support
 
+---
+
 ## About this Repository
 
 I've been struggling over the last few weeks to get `llama-cpp` up and running. It wasn't quite as easy as downloading the Python package and installing it with a few flags. After long hours of trying to figure out why I wouldn't get the all-important `BLAS = 1` to run GPU inferences, I've figured it out, and this repository will serve as a refresher on how to reproduce the installation process that worked.
@@ -7,6 +9,8 @@ I've been struggling over the last few weeks to get `llama-cpp` up and running. 
 Keep in mind that this may not be the best way to install `llama-cpp` (or even the right way for all that matter), but this was the way that worked for me. Here's a detailed description of the environment I used: OS, dependencies, and build process for both CPU and GPU inferences.
 
 I strongly advise running inferences locally on a CPU unless you've got a beefy GPU. In my opinion, the sacrifice of lower response times for higher accuracy in favour of GPU inferences is not worth it. I'd much prefer the model give me a quicker response especially when I'm trying to integrate this tool into my own LLM-backed projects.
+
+---
 
 ## Environment
 
@@ -79,6 +83,8 @@ make LLAMA_CUBLAS=1
 
 **Note: You don't need to make a separate `build/` directory to build the project.**
 
+---
+
 ## References
 
 - https://github.com/ggerganov/llama.cpp
@@ -86,3 +92,5 @@ make LLAMA_CUBLAS=1
 - https://pureinfotech.com/shutdown-linux-distro-wsl/
 - https://github.com/ggerganov/llama.cpp/discussions/2142
 - https://kubito.dev/posts/llama-cpp-linux-nvidia/
+
+---
