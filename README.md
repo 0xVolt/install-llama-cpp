@@ -29,11 +29,11 @@ I strongly advise running inferences locally on a CPU unless you've got a beefy 
 
 ### Specs
 
-OS: Ubuntu 22.04.3 LTS on Windows 10 x86_64
-Kernel: 5.10.16.3-microsoft-standard-WSL2
-Shell: zsh 5.8.1
-CPU: Intel i7-10750H (12) @ 2.591GHz
-GPU: Nvidia GTX 1650Ti Mobile
+- OS: Ubuntu 22.04.3 LTS on Windows 10 x86_64
+- Kernel: 5.10.16.3-microsoft-standard-WSL2
+- Shell: zsh 5.8.1
+- CPU: Intel i7-10750H (12) @ 2.591GHz
+- GPU: Nvidia GTX 1650Ti Mobile
 
 I set up `llama-cpp` on Ubuntu running on WSL2. All these commands should work for any Ubuntu based distribution of Linux.
 
