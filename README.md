@@ -24,17 +24,37 @@ I set up `llama-cpp` on Ubuntu running on WSL2. All these commands should work f
 
 1. GCC and G++ Compilers for C and C++
 2. CMake and Make
-3. Python 3.10.2 (Check setup in a `conda` environment)
+3. Python 3.10.9 (Check setup in a `conda` environment)
 4. Miniconda / Anaconda
 5. Git
 6. LLMs downloaded locally in `.gguf` format. You may use `llama-cpp`'s helper scripts to convert `.bin` models to `.gguf`.
 
-## Commands:
+## Installation Process
+
+Regardless of you having a GPU, it's best practice to start with a dedicated `conda` environment for installation of this package. Start with:
+
+```bash
+conda create -n llama-cpp python=3.10.9
+conda activate llama-cpp
+```
+
+Then, clone the `llama-cpp` repository from Github with:
+
+```bash
+git clone https://github.com/ggerganov/llama.cpp
+```
+
+Now, change directory into your cloned folder and install the requirements using `pip`:
+
+```bash
+git clone https://github.com/ggerganov/llama.cpp
+cd llama.cpp
+```
+
+### CPU Installation
 
 1. conda create -n llama-cpp python=3.10.9
 2. conda activate llama-cpp
-3. git clone https://github.com/ggerganov/llama.cpp
-4. cd llama.cpp
 5. python3 -m pip install -r requirements.txt
 
 ### CPU Only
