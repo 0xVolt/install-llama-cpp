@@ -51,28 +51,34 @@ git clone https://github.com/ggerganov/llama.cpp
 cd llama.cpp
 ```
 
-### CPU Installation
+### CPU Specific Instructions
 
-1. conda create -n llama-cpp python=3.10.9
-2. conda activate llama-cpp
-5. python3 -m pip install -r requirements.txt
+Use `CMake` to build the project in a `build/` folder then run a test inference.
 
-### CPU Only
-1. mkdir build
-2. cd build
-3. cmake ..
-4. cmake --build . --config Release
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build . --config Release
+```
 
-### GPU
+### GPU Specific Instructions
 
-In the Makefile, change the line:
-NVCCFLAGS += -arch=native
+Here's where things get a little dicey. To install and run `llama-cpp` with `cuBLAS` support, the regular installation from the official GitHub repository's `README` is bugged. Here's a hotfix that should let you build the project and install it okay.
 
-to read:
-NVCCFLAGS += -arch=all-major
+In the `Makefile`, change the line,
+`NVCCFLAGS += -arch=native`
+To read,
+`NVCCFLAGS += -arch=all-major`
 
-There might be some warnings about depreciation but it compiled for me.
+There might be some warnings about depreciation but it compiled for me. After that, you can use `make` to build the project.
 
 1. make LLAMA_CUBLAS=1
 
 ## References
+
+- https://github.com/ggerganov/llama.cpp
+- https://www.reddit.com/r/LocalLLaMA/comments/17ruptr/cant_get_cuda_to_work_with_llamacpppython_in_wsl/
+- https://pureinfotech.com/shutdown-linux-distro-wsl/
+- https://github.com/ggerganov/llama.cpp/discussions/2142
+- https://kubito.dev/posts/llama-cpp-linux-nvidia/
