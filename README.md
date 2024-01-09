@@ -46,6 +46,8 @@ I set up `llama-cpp` on Ubuntu running on WSL2. All these commands should work f
 5. Git
 6. LLMs downloaded locally in `.gguf` format. You may use `llama-cpp`'s helper scripts to convert `.bin` models to `.gguf`.
 
+---
+
 ## Installation Process
 
 Regardless of you having a GPU, it's best practice to start with a dedicated `conda` environment for installation of this package. Start with:
@@ -83,10 +85,11 @@ cmake --build . --config Release
 
 Here's where things get a little dicey. To install and run `llama-cpp` with `cuBLAS` support, the regular installation from the official GitHub repository's `README` is bugged. Here's a hotfix that should let you build the project and install it okay.
 
-In the `Makefile`, change the line,
-`NVCCFLAGS += -arch=native`
-To read,
-`NVCCFLAGS += -arch=all-major`
+    In the Makefile, change the line,
+    NVCCFLAGS += -arch=native
+    
+    To read,
+    NVCCFLAGS += -arch=all-major
 
 There might be some warnings about depreciation but it compiled for me. After that, you can use `make` to build the project.
 
