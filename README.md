@@ -6,7 +6,7 @@ I've been struggling over the last few weeks to get `llama-cpp` up and running. 
 
 Keep in mind that this may not be the best way to install `llama-cpp` (or even the right way for all that matter), but this was the way that worked for me. Here's a detailed description of the environment I used: OS, dependencies, and build process for both CPU and GPU inferences.
 
-I strongly advise running inferences locally on a CPU unless you've got a beefy GPU. In my opinion, the sacrifice of lower response times for higher accuracy in favour of GPU inferences is not worth it. I'd much prefer the model give me a quicker response especially when I'm trying to integrate this tool into my own LLM-backed projects. 
+I strongly advise running inferences locally on a CPU unless you've got a beefy GPU. In my opinion, the sacrifice of lower response times for higher accuracy in favour of GPU inferences is not worth it. I'd much prefer the model give me a quicker response especially when I'm trying to integrate this tool into my own LLM-backed projects.
 
 ## Environment
 
@@ -27,7 +27,7 @@ I set up `llama-cpp` on Ubuntu running on WSL2. All these commands should work f
 3. Python 3.10.2 (Check setup in a `conda` environment)
 4. Miniconda / Anaconda
 5. Git
-6. LLMs downloaded locally in `.gguf` format. You may use `llama-cpp`'s helper scripts to convert `.bin` models to `.gguf`. 
+6. LLMs downloaded locally in `.gguf` format. You may use `llama-cpp`'s helper scripts to convert `.bin` models to `.gguf`.
 
 ## Commands:
 
