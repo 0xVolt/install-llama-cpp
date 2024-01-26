@@ -87,7 +87,7 @@ Here's where things get a little dicey. To install and run `llama-cpp` with `cuB
 
     In the Makefile, change the line,
     NVCCFLAGS += -arch=native
-    
+
     To read,
     NVCCFLAGS += -arch=all-major
 
